@@ -11,6 +11,14 @@ public class CuentaAhorro extends Cuenta {
     }
     //Metodos
     public void addTarjeta(TarjetaDebito tarjetaAgregar){
+        super.ahiTarjeta=true;
         this.tarjeta=tarjetaAgregar;
+    }
+    public String toString(){
+        if(ahiTarjeta==true){
+            return super.toString();
+        }else{
+            return super.toString()+"tarjeta:"+tarjeta;
+        }
     }
 }

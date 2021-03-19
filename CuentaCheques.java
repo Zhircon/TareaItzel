@@ -22,6 +22,15 @@ public class CuentaCheques extends Cuenta{
     }
     //Metodos
     public void addTarjeta(TarjetaCredito tarjetaAgregar){
+        super.ahiTarjeta=true;
         this.tarjeta=tarjetaAgregar;
+    }
+    public String toString(){
+        if(ahiTarjeta==true){
+            return super.toString()+"salario minimo:"+salarioMinimo+"tarjeta:"+tarjeta;
+        }else{
+            return super.toString()+"salario minimo:"+salarioMinimo+"tarjeta:"; 
+        }
+        
     }
 }

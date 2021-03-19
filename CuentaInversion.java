@@ -17,5 +17,7 @@ public class CuentaInversion extends Cuenta{
     public void setInteresAnual(float interesAnual) {
         this.interesAnual = interesAnual;
     }
-    
+    public String toString(){
+        return super.toString()+"interes anual: "+interesAnual;
+    }
 }

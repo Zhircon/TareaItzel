@@ -44,4 +44,7 @@ public class Cliente {
             System.out.println("ya no tengo espacio");
         }
     }
+    public String toString(){
+        return "Nombre: "+nombre+",Direccion: "+direccion+",rfc: "+rfc;
+    }
 }

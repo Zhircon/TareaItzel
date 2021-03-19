@@ -10,6 +10,12 @@ public class Principal {
         TarjetaDebito tarjetaDitzel =new TarjetaDebito(1,"hoy","kti");
         TarjetaCredito tarjetaCitzel =new TarjetaCredito(2, "mananita", "ktix2", 1200, 12);
         CuentaAhorro ahorroitzel=new CuentaAhorro(5, 300000, itzel);
+        CuentaCheques chequesitzel=new CuentaCheques(12, 1000000, itzel, 1000); 
+        CuentaInversion inversionitzel=new CuentaInversion(24, 3000, itzel, 32.4f);     
+        ahorroitzel.addTarjeta(tarjetaDitzel);
+        chequesitzel.addTarjeta(tarjetaCitzel);
         itzel.addCuenta(ahorroitzel);
+        itzel.addCuenta(chequesitzel);
+        itzel.addCuenta(inversionitzel);
     }
 }

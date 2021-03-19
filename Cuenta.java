@@ -3,6 +3,7 @@ public class Cuenta {
     protected int numeroCuenta;
     protected float saldo;
     protected Cliente cliente; 
+    protected boolean ahiTarjeta;
     //Construstructores
     public Cuenta(){
     }
@@ -26,6 +27,9 @@ public class Cuenta {
     public Cliente getCliente() {
         return cliente;
     }
+    public boolean getAhiTarjeta() {
+        return ahiTarjeta;
+    }
     //Setters 
     public void setNumeroCuenta(int numeroCuenta) {
         this.numeroCuenta = numeroCuenta;
@@ -35,5 +39,12 @@ public class Cuenta {
     }
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+    public void setAhiTarjeta(Boolean ahiTarjeta) {
+        this.ahiTarjeta = ahiTarjeta;
+    }
+    //Metodos
+    public String toString(){
+        return "numero cuenta:"+numeroCuenta+"saldo:"+saldo+"cliente"+cliente;
     }
 }

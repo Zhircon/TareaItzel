@@ -31,4 +31,7 @@ public class TarjetaDebito {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
+    public String toString(){
+        return "numero tarjeta: "+numeroTarjeta+",fecha vencimiento: "+fechaVencimiento+",codigo:"+codigo;
+    } 
 }

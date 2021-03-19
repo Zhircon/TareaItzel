@@ -23,4 +23,7 @@ public class TarjetaCredito extends TarjetaDebito {
     public void setSaldoDeudor(float saldoDeudor) {
         this.saldoDeudor = saldoDeudor;
     }
+    public String toString(){
+        return super.toString()+"saladoMaximo:"+saldoMaximo+"saldoDuudor"+saldoDeudor;
+    }
 }
