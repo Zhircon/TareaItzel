@@ -16,9 +16,9 @@ public class CuentaAhorro extends Cuenta {
     }
     public String toString(){
         if(ahiTarjeta==true){
-            return super.toString();
+            return super.toString()+"tarjeta:"+tarjeta.toString();
         }else{
-            return super.toString()+"tarjeta:"+tarjeta;
+            return super.toString();
         }
     }
 }

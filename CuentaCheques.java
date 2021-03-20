@@ -27,9 +27,9 @@ public class CuentaCheques extends Cuenta{
     }
     public String toString(){
         if(ahiTarjeta==true){
-            return super.toString()+"salario minimo:"+salarioMinimo+"tarjeta:"+tarjeta;
+            return super.toString()+"salario minimo:"+salarioMinimo+"tarjeta:"+tarjeta.toString();
         }else{
-            return super.toString()+"salario minimo:"+salarioMinimo+"tarjeta:"; 
+            return super.toString()+"salario minimo:"+salarioMinimo; 
         }
         
     }

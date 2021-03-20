@@ -1,11 +1,8 @@
 public class Principal {
     public static void main(String []args){
-        //Cliente agni=new Cliente("Agni","tierra","a1g2n3i4");
         
-        /*•	Crear un cliente que tiene los tres tipos de cuenta y 
-        los dos tipos de tarjetas, 
-        el programa debe mostrar los datos del cliente, 
-        junto con los datos de las cuentas, */ 
+        
+        //caso 1:
         Cliente itzel=new Cliente("itzel","tierra","1234abcd");
         TarjetaDebito tarjetaDitzel =new TarjetaDebito(1,"hoy","kti");
         TarjetaCredito tarjetaCitzel =new TarjetaCredito(2, "mananita", "ktix2", 1200, 12);
@@ -14,8 +11,26 @@ public class Principal {
         CuentaInversion inversionitzel=new CuentaInversion(24, 3000, itzel, 32.4f);     
         ahorroitzel.addTarjeta(tarjetaDitzel);
         chequesitzel.addTarjeta(tarjetaCitzel);
-        itzel.addCuenta(ahorroitzel);
-        itzel.addCuenta(chequesitzel);
-        itzel.addCuenta(inversionitzel);
+        System.out.println(itzel);
+        System.out.println(ahorroitzel);
+        System.out.println(chequesitzel);
+        System.out.println(inversionitzel);
+        System.out.println("\n\n\n\n");
+        //Caso 2:
+        Cliente agni=new Cliente("Agni","tierra","a1g2n3i4");
+        TarjetaDebito tarjetaDagni =new TarjetaDebito(51, "ayer", "kti");
+        CuentaAhorro ahorroAgni= new CuentaAhorro(5, 12000, agni);
+        ahorroAgni.addTarjeta(tarjetaDagni);
+        System.out.println(agni);
+        System.out.println(ahorroAgni);
+        System.out.println("\n\n\n\n");
+        //Caso3
+        Cliente shakti=new Cliente("Shakti","tierra","a2345");
+        TarjetaCredito tarjetaDshakti =new TarjetaCredito(56, "ano", "holi", 30000, 0);
+        CuentaCheques ahorroshakti= new CuentaCheques(90, 12000000, shakti, 1000);
+        ahorroshakti.addTarjeta(tarjetaDshakti);
+        System.out.println(shakti);
+        System.out.println(ahorroshakti);
+
     }
 }

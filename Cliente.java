@@ -3,8 +3,6 @@ public class Cliente {
     private String nombre;
     private String direccion;
     private String rfc;
-    private int numCuentas;
-    private Cuenta[] cuentas=new Cuenta[3];
     //Constructores
     public Cliente(){
     }
@@ -23,9 +21,6 @@ public class Cliente {
     public String getRfc() {
         return rfc;
     }
-   public Cuenta getCuenta(int i) {
-       return cuentas[i];
-   }
     //Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -37,13 +32,8 @@ public class Cliente {
         this.rfc = rfc;
     }
     //Metodos
-    public void addCuenta(Cuenta cuentAagregar){
-        if(numCuentas<3){
-            cuentas[numCuentas]=cuentAagregar;
-        }else{
-            System.out.println("ya no tengo espacio");
-        }
-    }
+    
+
     public String toString(){
         return "Nombre: "+nombre+",Direccion: "+direccion+",rfc: "+rfc;
     }
